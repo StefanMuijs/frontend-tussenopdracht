@@ -3,28 +3,55 @@ body {
     font-family: Arial;
 }
 
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    margin: 0px;
+    border-bottom: 5px solid red;
+}
+
+h5 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0px;
+}
+
+h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 25px 10px;
+}
+
 .navlogo {
     width: 20px;
     padding: 20px 10px;
 }
 
-#kaynimage {
-    width: 500px;
-    border: 1px solid black;
-    margin-bottom: 100px;
-}
-
-#productimage {
-    flex: 2;
-}
-
-#introtext {
-    flex: 1;
+.navlogo:hover {
+    background-color: red;
 }
 
 nav {
     display: flex;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid red;
     background-color: black;
     padding-left: 100px;
 }
@@ -35,19 +62,40 @@ nav a {
     color: white;
 }
 
+nav a:hover {
+    background-color: red;
+}
+
 header {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
+
 }
 
-.productnaam {
-    margin-top: 100px;
-    margin-left: 100px;
+.kaynimage {
+    width: 350px;
+    border: 2px solid red;
+    margin-bottom: 100px;
 }
 
-.product {
+#product1price {
+    flex: 1;
+}
+
+.produc1title {
+    margin: 100px 0px 0px 100px;
+
+}
+
+.product1 {
     display: flex;
     margin: 0px 100px;
+    gap: 20px;
+}
 
+.product1image {
+    flex: 2;
+    display: flex;
+    gap: 30px;
 }
 
 .bestellen {
@@ -55,7 +103,12 @@ header {
     color: white;
     background-color: red;
     border-radius: 5px;
-    padding: 5px 100px;
+    padding: 10px 200px;
+    text-align: center;
+}
+
+.bestellen:hover {
+    background-color: black;
 }
 
 #productomschrijving {
@@ -71,7 +124,7 @@ header {
 .plusminpunten {
     background-color: black;
     flex: 1;
-    padding: 40px 30px;
+    padding: 30px 30px;
     color: white;
 
 }
@@ -84,9 +137,57 @@ header {
     background-color: black;
     color: white;
     text-align: center;
+    padding: 50px;
 }
 
 .andereproducten {
     display: flex;
     justify-content: center;
+    gap: 50px;
+    margin: 0 200px;
+}
+
+.product2 {
+    flex: 1;
+}
+
+.product3 {
+    flex: 1;
+}
+
+.product4 {
+    flex: 1;
+}
+
+
+.gerelateerdeproductenimages {
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px solid white;
+}
+
+.gerelateerdeproductenimages:hover {
+    scale: 120%;
+    background-color: white;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 50px 20px;
+}
+
+footer {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+footer a:hover {
+    background-color: black;
 }
